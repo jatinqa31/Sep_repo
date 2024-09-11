@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Big TestNG Test" parallel="classes">
+    <listeners>
+        <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter"/>
+        <!--<listener class-name="com.big.utils.AnnotationTransformer"/>-->
+    </listeners>
+<!--   <groups>
+        <run>
+            <exclude name="Sanity"/>
+            <include name="Regression"/>
+            <include name="google"/>
+            <include name="Smoke"/>
+        </run>
+    </groups>-->
+    <test name="Google Search" preserve-order="true">
+        <classes>
+	            <class name="com.qa.openkart.Tests.ALoginPageTest_1">
+		            <methods>
+		            <include name="Login"/>
+		            <include name="Fetch_title"/>
+		            </methods>
+	            </class>
+            	<class name="com.qa.openkart.Tests.BHomePageTest_2">
+            	<methods>
+		            <include name="operations_2"/>
+		            <include name="Click_Leads"/>
+	            </methods>
+            	</class>
+        </classes>
+    </test>
+</suite>
