@@ -13,10 +13,10 @@ public class Loginpage {
 	
 	//1.String Locators - OR[Object Repository]
 	
-	private String search = "input[name='search']";// using cs selector
-	private String search_icon = "div#search button";// using cs selector
-	private String searchPageHeader = "div# content h1";
-	private String search_box = "//textarea[@name='q']";// Xpath Locator
+//	private String search = "input[name='search']";// using cs selector
+//	private String search_icon = "div#search button";// using cs selector
+//	private String searchPageHeader = "div# content h1";
+//	private String search_box = "//textarea[@name='q']";// Xpath Locator
 	private String username = "//input[@name='user_name']";// Xpath Locator
 	private String password = "//input[@name='user_password']";// Xpath Locator
 	private String signin_btn = "//input[@id='submitButton']";// Xpath Locator
@@ -33,7 +33,7 @@ public class Loginpage {
 	public String getHomePageTitle() {
 		return page.title();
 	}
-	
+	 
 	//3. page actions/methods:
 	public String getHomePageURL() {
 		return page.url();
@@ -63,6 +63,7 @@ public class Loginpage {
 //		page.textContent(search_box);//textContent method  of playwright is equal to text() method in selenium
 //		System.out.println("Title "+page.title());
 //	}		
+	 
 	
 	// page actions/methods:
 	public void doSearch(String productName) {
@@ -70,8 +71,8 @@ public class Loginpage {
 //		page.click(search_icon);
 //		return page.textContent(searchPageHeader);
 //		page.locator(searchPageHeader)
-		page.fill(search_box, "hello Jatin");
-		page.textContent(search_box);//textContent method  of playwright is equal to text() method in selenium
+//		page.fill(search_box, "hello Jatin");
+//		page.textContent(search_box);//textContent method  of playwright is equal to text() method in selenium
 		System.out.println("Title "+page.title());
 	}	
 }

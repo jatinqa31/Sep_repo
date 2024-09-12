@@ -6,12 +6,13 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Google Search(failed)">
     <classes>
-      <class name="com.qa.openkart.Tests.BHomePageTest_2">
+      <class name="com.qa.openkart.Tests.HomePageTest">
         <methods>
           <include name="Click_Leads"/>
+          <include name="Operations_2"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.openkart.Tests.BHomePageTest_2 -->
+      </class> <!-- com.qa.openkart.Tests.HomePageTest -->
     </classes>
   </test> <!-- Google Search(failed) -->
 </suite> <!-- Failed suite [Big TestNG Test] -->

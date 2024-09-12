@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Big_TestNG_Test" class="navigator-link">
-              <span class="suite-name border-failed">Big TestNG Test</span>
+              <span class="suite-name border-passed">Big TestNG Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Big_TestNG_Test" class="hide-methods failed suite-Big_TestNG_Test"> (hide)</a> <!-- hide-methods failed suite-Big_TestNG_Test -->
-                      <a href="#" panel-name="suite-Big_TestNG_Test" class="show-methods failed suite-Big_TestNG_Test"> (show)</a> <!-- show-methods failed suite-Big_TestNG_Test -->
-                    </span>
-                    <div class="method-list-content failed suite-Big_TestNG_Test">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Big_TestNG_Test" title="com.qa.openkart.Tests.BHomePageTest_2" class="method navigator-link" hash-for-method="Click_Leads">Click_Leads</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Big_TestNG_Test -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,12 +104,17 @@
                     <div class="method-list-content passed suite-Big_TestNG_Test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Big_TestNG_Test" title="com.qa.openkart.Tests.ALoginPageTest_1" class="method navigator-link" hash-for-method="Fetch_title">Fetch_title</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Big_TestNG_Test" title="com.qa.openkart.Tests.HomePageTest" class="method navigator-link" hash-for-method="Click_Leads">Click_Leads</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Big_TestNG_Test" title="com.qa.openkart.Tests.ALoginPageTest_1" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Big_TestNG_Test" title="com.qa.openkart.Tests.LoginPageTest" class="method navigator-link" hash-for-method="Fetch_title">Fetch_title</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Big_TestNG_Test" title="com.qa.openkart.Tests.LoginPageTest" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Big_TestNG_Test -->
@@ -138,48 +129,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Big_TestNG_Test" class="panel Big_TestNG_Test">
-          <div class="suite-Big_TestNG_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.openkart.Tests.BHomePageTest_2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Click_Leads">
-                  </a> <!-- Click_Leads -->
-                  <span class="method-name">Click_Leads</span>
-                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Object doesn&apos;t exist: request@dc4760a3ff5a72b7843c4a2ddbde16a1
-	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:192)
-	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:752)
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:292)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.waitForTimeoutImpl(FrameImpl.java:1076)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForTimeout$95(PageImpl.java:1562)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1562)
-	at com.qa.openkart.Tests.BHomePageTest_2.Click_Leads(BHomePageTest_2.java:42)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Click on Leads Link on Home Page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Big_TestNG_Test-class-failed -->
           <div class="suite-Big_TestNG_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.openkart.Tests.ALoginPageTest_1</span>
+              <span class="class-name">com.qa.openkart.Tests.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -202,6 +155,23 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Big_TestNG_Test-class-passed -->
+          <div class="suite-Big_TestNG_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.openkart.Tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Click_Leads">
+                  </a> <!-- Click_Leads -->
+                  <span class="method-name">Click_Leads</span>
+                  <em>
+(Click on Leads Link on Home Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Big_TestNG_Test-class-passed -->
         </div> <!-- panel Big_TestNG_Test -->
         <div panel-name="test-xml-Big_TestNG_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -211,24 +181,24 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;Big TestNG Test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Big TestNG Test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Google Search&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Google Search&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.openkart.Tests.ALoginPageTest_1&quot;&gt;
+      &lt;class name=&quot;com.qa.openkart.Tests.LoginPageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Login&quot;/&gt;
           &lt;include name=&quot;Fetch_title&quot;/&gt;
+          &lt;include name=&quot;Login&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.qa.openkart.Tests.ALoginPageTest_1 --&gt;
-      &lt;class name=&quot;com.qa.openkart.Tests.BHomePageTest_2&quot;&gt;
+      &lt;/class&gt; &lt;!-- com.qa.openkart.Tests.LoginPageTest --&gt;
+      &lt;class name=&quot;com.qa.openkart.Tests.HomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;operations_2&quot;/&gt;
+          &lt;include name=&quot;Operations_2&quot;/&gt;
           &lt;include name=&quot;Click_Leads&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.qa.openkart.Tests.BHomePageTest_2 --&gt;
+      &lt;/class&gt; &lt;!-- com.qa.openkart.Tests.HomePageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Google Search --&gt;
 &lt;/suite&gt; &lt;!-- Big TestNG Test --&gt;
@@ -270,22 +240,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'com.qa.openkart.Tests.ALoginPageTest_1')
-data.setCell(0, 3, 1853);
+data.setCell(0, 1, 'Click_Leads')
+data.setCell(0, 2, 'com.qa.openkart.Tests.HomePageTest')
+data.setCell(0, 3, 4628);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Click_Leads')
-data.setCell(1, 2, 'com.qa.openkart.Tests.BHomePageTest_2')
-data.setCell(1, 3, 206);
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'com.qa.openkart.Tests.LoginPageTest')
+data.setCell(1, 3, 1936);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Fetch_title')
-data.setCell(2, 2, 'com.qa.openkart.Tests.ALoginPageTest_1')
-data.setCell(2, 3, 44);
+data.setCell(2, 2, 'com.qa.openkart.Tests.LoginPageTest')
+data.setCell(2, 3, 50);
 window.suiteTableData['Big_TestNG_Test']= { tableData: data, tableDiv: 'times-div-Big_TestNG_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Big_TestNG_Test">
               </div> <!-- times-div-Big_TestNG_Test -->
             </div> <!-- times-div -->
@@ -304,11 +274,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.openkart.Tests.BHomePageTest_2</span>
+              <span class="ignored-class-name">com.qa.openkart.Tests.HomePageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
                 <span class="ignored-method-name">Operations_2</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -320,30 +290,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.openkart.Tests.ALoginPageTest_1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.openkart.Tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.openkart.Tests.BHomePageTest_2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Click_Leads</span>
-                <span class="method-start">7185 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.openkart.Tests.ALoginPageTest_1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Fetch_title</span>
-                <span class="method-start">7185 ms</span>
+                <span class="method-start">8380 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">7261 ms</span>
+                <span class="method-start">8458 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.openkart.Tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Click_Leads</span>
+                <span class="method-start">10402 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+//import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.service.ExtentTestManager;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Tracing;
@@ -18,11 +18,11 @@ import com.qa.openkart.pages.Loginpage;
 import com.qa.openkart.testbase.base_class;
 import com.aventstack.extentreports.ExtentReports;
 
-//@Listeners(com.qa.openkart.utilities.ExtentReportsListener.class)
-public class ALoginPageTest_1 extends base_class{
+@Listeners(com.qa.openkart.utilities.ExtentReportsListener.class)
+public class LoginPageTest extends base_class{
  
-    private static ExtentReports extent;
-    private static ExtentTest test;
+//    private static ExtentReports extent;
+//    private static ExtentTest test;
 	
 //	PlaywrightFactory pf;
 //	Page page;
@@ -60,7 +60,7 @@ public class ALoginPageTest_1 extends base_class{
 			System.out.println("Title of page "+ loginpage.getHomePageTitle());
 		}
  
-		@Test(priority =1, description ="Login with Valid Credentials")
+		@Test(priority =1,dependsOnMethods="Fetch_title", description ="Login with Valid Credentials")
 		public void Login() { 
 //			loginpage = new Loginpage(page);
 //			System.out.println("Page =  "+page);

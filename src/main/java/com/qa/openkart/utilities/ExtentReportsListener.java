@@ -1,7 +1,7 @@
 package com.qa.openkart.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+//import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -10,18 +10,20 @@ public class ExtentReportsListener implements ITestListener {
     private static ExtentReports extentReports;
     private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
-    static {
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent-report.html");
-        
-        ///below lines is for design in Extent Report
-        htmlReporter.config().setReportName("Playwright POM_HTML");
-        htmlReporter.config().setDocumentTitle("Playwright Project");
-        htmlReporter.config().setTheme(com.aventstack.extentreports.reporter.configuration.Theme.STANDARD);
-        
-        extentReports = new ExtentReports();
-        extentReports.attachReporter(htmlReporter);
+    static { 
+//        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent-report.html");
+//        
+//        ///below lines is for design in Extent Report
+//        htmlReporter.config().setReportName("Playwright POM_HTML");
+//        htmlReporter.config().setDocumentTitle("Playwright Project");
+//        htmlReporter.config().setTheme(com.aventstack.extentreports.reporter.configuration.Theme.STANDARD);
+//        
+//        extentReports = new ExtentReports();
+//        extentReports.attachReporter(htmlReporter);
     }
 
+    
+    
     @Override
     public void onStart(ITestContext context) {
         // You can initialize anything before the tests start if needed 

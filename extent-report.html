@@ -39,7 +39,6 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 11, 2024 08:24:17 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 12, 2024 01:27:27 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -65,7 +64,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -109,12 +107,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$66%'>
-                    <span class='strong'>2</span> tests passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>3</span> tests passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
-                    1</span> tests failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> tests failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -135,17 +133,17 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Fetch_title</span>
-						<span class='test-time'>Sep 11, 2024 08:24:28 PM</span>
+						<span class='test-time'>Sep 12, 2024 01:27:36 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 11, 2024 08:24:28 PM</span>
-	<span class='label end-time'>Sep 11, 2024 08:24:28 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.042</span>
+	<span class='label start-time'>Sep 12, 2024 01:27:36 PM</span>
+	<span class='label end-time'>Sep 12, 2024 01:27:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 00.058</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -159,73 +157,9 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>8:24:28 PM</td>
+				<td class='timestamp'>1:27:36 PM</td>
 				<td class='step-details'>
 						Test passed
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-					</div>
-				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
-					<div class='test-heading'>
-						<span class='test-name'>Click_Leads</span>
-						<span class='test-time'>Sep 11, 2024 08:24:28 PM</span>
-						<span class='test-status right fail'>Fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 11, 2024 08:24:28 PM</span>
-	<span class='label end-time'>Sep 11, 2024 08:24:28 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 00.302</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>			
-				<td class='status fail' title='Fail' alt='Fail'><i class='material-icons'> cancel </i></td>
-				<td class='timestamp'>8:24:28 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">com.microsoft.playwright.PlaywrightException: Object doesn't exist: request@0fa1982a4df90becc3d992f6b049f0b0
-	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:192)
-	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:752)
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:292)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.waitForTimeoutImpl(FrameImpl.java:1076)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForTimeout$95(PageImpl.java:1562)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1562)
-	at com.qa.openkart.Tests.BHomePageTest_2.Click_Leads(BHomePageTest_2.java:42)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</textarea>
 				</td>
 			</tr>
 		</tbody>
@@ -237,14 +171,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>Login</span>
-						<span class='test-time'>Sep 11, 2024 08:24:28 PM</span>
+						<span class='test-time'>Sep 12, 2024 01:27:36 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 11, 2024 08:24:28 PM</span>
-	<span class='label end-time'>Sep 11, 2024 08:24:30 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>00 00 01.750</span>
+	<span class='label start-time'>Sep 12, 2024 01:27:36 PM</span>
+	<span class='label end-time'>Sep 12, 2024 01:27:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 01.936</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -258,7 +192,42 @@
 		<tbody>
 			<tr class='log' status='pass'>			
 				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
-				<td class='timestamp'>8:24:30 PM</td>
+				<td class='timestamp'>1:27:38 PM</td>
+				<td class='step-details'>
+						Test passed
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Click_Leads</span>
+						<span class='test-time'>Sep 12, 2024 01:27:38 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 12, 2024 01:27:38 PM</span>
+	<span class='label end-time'>Sep 12, 2024 01:27:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>00 00 04.628</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>			
+				<td class='status pass' title='Pass' alt='Pass'><i class='material-icons'> check_circle </i></td>
+				<td class='timestamp'>1:27:43 PM</td>
 				<td class='step-details'>
 						Test passed
 				</td>
@@ -291,91 +260,7 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>com.microsoft.playwright.PlaywrightException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sep 11, 2024 08:24:28 PM</td>
-										<td class='linked' test-id='1'>Click_Leads</td>
-										<td>
-											<textarea disabled class="code-block">com.microsoft.playwright.PlaywrightException: Object doesn't exist: request@0fa1982a4df90becc3d992f6b049f0b0
-	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:192)
-	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:752)
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:292)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.waitForTimeoutImpl(FrameImpl.java:1076)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForTimeout$95(PageImpl.java:1562)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.waitForTimeout(PageImpl.java:1562)
-	at com.qa.openkart.Tests.BHomePageTest_2.Click_Leads(BHomePageTest_2.java:42)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -395,19 +280,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 11, 2024 08:24:17 PM</div>
+					<div class='panel-lead'>Sep 12, 2024 01:27:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 11, 2024 08:24:30 PM</div>
+			 		<div class='panel-lead'>Sep 12, 2024 01:27:43 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 12.605</div>
+					<div class='panel-lead'>00 00 15.841</div>
 				</div>
 			</div>
 		</div>
@@ -419,8 +304,8 @@
 		<script>
 			var statusGroup = {
                 parentCount: 3,
-				passParent: 2,
-				failParent: 1,
+				passParent: 3,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
@@ -446,7 +331,7 @@
 		
 		<script>
 			var timeline = {
-			        "Fetch_title":0.042,"Click_Leads":0.302,"Login":1.75
+			        "Fetch_title":0.058,"Login":1.936,"Click_Leads":4.628
 			};
 		</script>
 		
