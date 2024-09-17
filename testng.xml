@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Big TestNG Test" parallel="classes">
+<suite name="Big TestNG Test" preserve-order="true">
     <listeners>
         <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter"/>
         <!--<listener class-name="com.big.utils.AnnotationTransformer"/>-->
@@ -13,20 +13,22 @@
             <include name="Smoke"/>
         </run>
     </groups>-->
-    <test name="Google Search" preserve-order="true">
+    <!--//earlier it was set parallel=methods-->
+    <test name="Google Search">
         <classes>
-	            <class name="com.qa.openkart.Tests.ALoginPageTest_1">
-		            <methods>
-		            <include name="Login"/>
+            <class name="com.qa.openkart.Tests.LoginPageTest">
+	            <methods>
 		            <include name="Fetch_title"/>
-		            </methods>
-	            </class>
-            	<class name="com.qa.openkart.Tests.BHomePageTest_2">
-            	<methods>
-		            <include name="operations_2"/>
-		            <include name="Click_Leads"/>
+		            <include name="Login"/>
 	            </methods>
-            	</class>
+            </class>
+        	<class name="com.qa.openkart.Tests.HomePageTest">
+	        	<methods>
+		            <include name="Operations_2"/>
+		            <include name="Click_Leads"/>
+		            <include name="List_of_Leads"/>
+	            </methods>
+            </class>
         </classes>
     </test>
 </suite>
