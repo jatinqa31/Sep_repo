@@ -6,6 +6,7 @@ import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Tracing;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 
 public class PlaywrightFactory {
@@ -52,6 +53,13 @@ public class PlaywrightFactory {
 			browserContext = browser.newContext();
 			page = browserContext.newPage();
 			page.navigate("http://localhost:8888/");
+			
+			//---------------TRACER CODE----------------------------
+			browserContext.tracing().start(new Tracing.StartOptions()
+                .setScreenshots(true)   // Capture screenshots
+                .setSnapshots(true)     // Capture DOM snapshots
+                .setSources(true));     // Capture script sources
+			
 			return page;
 		}
 }

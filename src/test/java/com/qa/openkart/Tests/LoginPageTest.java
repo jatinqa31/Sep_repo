@@ -18,7 +18,7 @@ import com.qa.openkart.pages.Loginpage;
 import com.qa.openkart.testbase.base_class;
 import com.aventstack.extentreports.ExtentReports;
 
-@Listeners(com.qa.openkart.utilities.ExtentReportsListener.class)
+//@Listeners(com.qa.openkart.utilities.ExtentReportsListener.class)
 public class LoginPageTest extends base_class{
  
 //    private static ExtentReports extent;

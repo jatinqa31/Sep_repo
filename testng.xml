@@ -13,18 +13,20 @@
             <include name="Smoke"/>
         </run>
     </groups>-->
+    <!--//earlier it was set parallel=methods-->
     <test name="Google Search">
         <classes>
             <class name="com.qa.openkart.Tests.LoginPageTest">
 	            <methods>
 		            <include name="Fetch_title"/>
-		            <include name="Logins"/>
+		            <include name="Login"/>
 	            </methods>
             </class>
         	<class name="com.qa.openkart.Tests.HomePageTest">
 	        	<methods>
 		            <include name="Operations_2"/>
 		            <include name="Click_Leads"/>
+		            <include name="List_of_Leads"/>
 	            </methods>
             </class>
         </classes>
